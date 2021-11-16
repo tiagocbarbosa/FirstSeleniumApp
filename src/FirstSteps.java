@@ -29,6 +29,9 @@ public class FirstSteps {
         WebElement searchBox = driver.findElement(By.name("q"));
         // imprime o nome da tag HTML
         System.out.println(searchBox.getTagName()); // -> input
+        // limpar qualquer possível texto no elemento, e escrever nele
+        searchBox.clear();
+        searchBox.sendKeys("teste");
 
         // imprime o título da página no console
         System.out.println(driver.getTitle());
