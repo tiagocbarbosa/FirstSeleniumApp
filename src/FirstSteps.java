@@ -32,6 +32,8 @@ public class FirstSteps {
         // limpar qualquer possível texto no elemento, e escrever nele
         searchBox.clear();
         searchBox.sendKeys("teste");
+        // submete o formulário (pois o botão "Pesquisa Google" não é interagível)
+        searchBox.submit();
 
         // imprime o título da página no console
         System.out.println(driver.getTitle());
