@@ -10,7 +10,7 @@ public class FirstSteps {
     WebDriver driver;
 
     @Before
-    public void preCondicao() {
+    public void preCondition() {
         // define o local do driver
         System.setProperty("webdriver.gecko.driver", "C:/Users/tiago/Documents/Programming/Java/Web/geckodriver-v0.30.0-win64/geckodriver.exe");
         // inicia o Firefox
@@ -22,7 +22,7 @@ public class FirstSteps {
     }
 
     @Test
-    public void meuPrimeiroTest () {
+    public void myFirstTest () {
         // imprime o título da página no console
         System.out.println(driver.getTitle());
         // imprime a URL atual no console
@@ -30,7 +30,7 @@ public class FirstSteps {
     }
 
     @After
-    public void posCondicao() {
+    public void posCondition() {
         // fecha a janela do navegador
         driver.quit();
     }
